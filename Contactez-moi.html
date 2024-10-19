@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactez-moi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="HautContact">Bienvenue sur mon site Web</h1>
+        <nav>
+            <marquee behavior="" direction="">Projet final formation D-Click en Developpement Web niveau débutant : Portefeuille personnel</marquee>
+            <div id="bandeNAV"><a class="nav" href="index.html">Accueil</a> | <a class="nav" href="A propos.html">À propos</a> | <a class="nav" href="Projets.html">Projets</a> | <a class="nav" id="ici" href="Contactez-moi.html">Contactez-moi</a></div>
+        </nav> 
+        <div id="Contact">
+            <h2>Mes Coordonnées</h2>
+            <div>
+                <form action="">
+                    <table id="Coordonnees">
+                        <tr>
+                            <td align="right">Boite mail :</td>
+                            <td>cheikhsaliou@yahoo.fr</td>
+                        </tr>
+                        <tr>
+                            <td align="right">Tel :</td>
+                            <td>00221 77 766 37 08</td>
+                        </tr>
+                        <tr>
+                            <td align="right">Addresse :</td>
+                            <td >Villa n°22 Cité Venus,<br>Rufisque Ouest,<br>Dakar,Sénégal</td>
+                        </tr>
+                        <tr>
+                            <td align="right">Boite Postale</td>
+                            <td>20 000</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <h2>Envoyez-moi un message</h2>
+            <div>
+                <form id="messageForm">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required><br>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required><br>
+                    <label for="message">Message :</label><br>
+                    <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea><br>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <script>
+                    document.getElementById('messageForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        var nom = document.getElementById('nom').value;
+                        var email = document.getElementById('email').value;
+                        var message = document.getElementById('message').value;
+                        var contenuMessage = "Nom: " + nom + "\nEmail: " + email + "\nMessage: " + message + "\n---------------------\n";
+                        var blob = new Blob([contenuMessage], { type: 'text/plain' });
+                        var lienTelechargement = document.createElement('a');
+                        lienTelechargement.href = window.URL.createObjectURL(blob);
+                        lienTelechargement.download ='message.txt';
+                        lienTelechargement.click();
+                    });
+                </script>
+            </div>
+            <h2>Réseaux sociaux</h2>
+            <div>
+                <form action="">
+                    <table id="Reseaux">
+                        <tr>
+                            <td align="right"><img id="logo" src="Images/LinkedIn_logo.png" alt="Logo LinkedIn"></td>
+                            <td><a href="https://www.linkedin.com/in/cheikh-saliou-wade-9a3680a0" target="_blank">www.linkedin.com/in/cheikh-saliou-wade-9a3680a0</a></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><img id="logo" src="Images/github_logo.png" alt="Logo GitHub"></td>
+                            <td><a href="https://github.com/SalihWad" target="_blank">https://github.com/SalihWad</a></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><img id="logo" src="Images/Facebook_logo.png" alt="Logo Facebook"></td>
+                            <td ><a href="https://www.facebook.com/cheikh.s.wade" target="_blank">https://www.facebook.com/cheikh.s.wade</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div style="padding: 5px; float: inline-end;"><a href="#HautContact">Revenir plus haut</a></div>
+        <div class="Copyright">© Cheikh Saliou WADE | D-Click 2024</div>
+    </body>
+</html>

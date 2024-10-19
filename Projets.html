@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="Projets.js"></script>
+    </head>
+    <body>
+        <h1 id="HautProjets">Bienvenue sur mon site Web</h1>
+        <nav>
+            <marquee behavior="" direction="">Projet final formation D-Click en Developpement Web niveau débutant : Portefeuille personnel</marquee>
+            <div id="bandeNAV"><a class="nav" href="index.html">Accueil</a> | <a class="nav" href="A propos.html">À propos</a> | <a class="nav" id="ici" href="Projets.html">Projets</a> | <a class="nav" href="Contactez-moi.html">Contactez-moi</a></div>
+        </nav>
+        <h2>Quelques projets de développement Web</h2>
+        <div id="Projets">
+            <div id="Part1">
+                <div>
+                    <h3><strong>Projet vérification maturité âge</strong></h3>
+                    <p id="label"><q>Donner un âge</q></p>
+                    <input type="number" id="saisirAge" oninput="afficheAge()"><br>
+                    <span id="result"></span>
+                </div>
+                <div>
+                    <h3><strong>Projet vérification de la parité d’un nombre</strong></h3>
+                    <p id="label"><q>Donner un nombre</q></p>
+                    <input type="number" id="saisirNB" oninput="parite()"><br>
+                    <span id="pair"></span>
+                </div>
+                <div>
+                    <h3><strong>Projet donner un mois</strong></h3>
+                    <p id="label"><q>Donner un chiffre entre 1 et 12</q></p>
+                    <input type="number" id="saisirMois" oninput="afficheMois()"><br>
+                    <span id="num"></span>
+                </div>
+            </div>
+            <div id="Part2">
+                <div>
+                    <h3><strong>Projet somme des nombre premier de 1 à 100</strong></h3><br>
+                    <span id="mbwsomprem"></span>
+                    <script>
+                    let somme=0;    
+                    for (let prem=1;prem<=100;prem++){
+                        if(estPrem(prem)){somme+=prem;}
+                    }                
+                    document.getElementById("mbwsomprem").innerText="La somme des nombres premiers entre 1 et 100 est "+somme;
+                </script>
+                </div>
+                <div>
+                    <h3><strong>Projet deviner un nombre secret aléatoire entre 1 à 100</strong></h3>
+                    <p id="label"><q>Deviner le nombre le nombre</q></p>
+                    <input type="number" id="saisirSecret" > <input id="button" type="button" value="Vérifier" onclick="secretNB()"><br>
+                    <span id="secret"></span>
+                </div>
+                <div>
+                    <h3><strong>Projet séquence de Fibonacci</strong></h3>
+                    <p id="label"><q>Donner le nombre de termes</q></p>
+                    <input type="number" id="saisirSeq"> <input id="button" type="button" value="Générer" onclick="Fibonacci()"><br>
+                    <span id="fibonacci"></span>
+                </div>
+            </div>
+            <div id="Part3">
+                <div>
+                    <h3><strong>Projet Facteurs d'un nombre</strong></h3>
+                    <p id="label"><q>Donner un nombre</q></p>
+                    <input type="number" id="saisirFact" > <input id="button" type="button" value="Facteurs" onclick="Facteur()"><br>
+                    <span id="factnbr"></span>
+                </div>
+                <div>
+                    <h3><strong>Projet Calcul de la moyenne de nombre positif</strong></h3>
+                    <input id="button" type="button" value="Cliquer pour saisir les notes" onclick="CalculMoyenne()"><br>
+                    <span id="moye"></span>
+                </div>
+                <div>
+                    <h3><strong>Projet Motif triangulaire avec des étoiles</strong></h3>
+                    <p id="label"><q>Donner la hauteur du triangle</q></p>
+                    <input type="number" id="saisirTri"> <input id="button" type="button" value="Générer" onclick="dessineTriangle()"><br>
+                    <span id="tri"></span>
+                </div>
+            </div>
+            <div id="Part4">
+                <div>
+                    <h3><strong>Projet Manipulation chaine de caractère</strong></h3>
+                    <p id="label"><q>Zone de saisie de texte</q></p>
+                    <input type="text" id="chain" oninput="afficheLongChain(),extraitChain()"><br>
+                    <span id="Long"></span> <br>
+                    <span id="Extrait"></span>
+                </div>
+                <div>
+                    <h3><strong>Projet Manipulation de Date</strong></h3>
+                    <form action="">
+                        <p id="label"><q>Choisir une date</q></p>
+                        <input type="date" id="saisirDate" placeholder="dd-mm-yyyy" onchange="AfficheDate(),DiffDate()" pattern="\d{2}-\d{2}-\d{4}" required><br>
+                        <span id="afficheJour"></span><br>
+                        <span id="afficheMois"></span><br>
+                        <span id="afficheAnnee"></span><br>
+                        <span id="DifDate"></span><br>
+                    </form>
+                </div>
+                <div>
+                    <h3><strong>Projet Calcul mensualités prêt</strong></h3>
+                    <form action="" id="CalculPret">
+                        <p id="label"><q>Saisir les valeurs</q></p>
+                        <label for="montant">Montant : </label>
+                        <input type="text" id="montant" placeholder="Montant du Prêt" required><label for="taux">FCFA</label><br>
+                        <label for="taux">Taux : </label>
+                        <input type="text" id="taux" placeholder="Taux d'intérêt annuel"><label for="taux">%</label><br>
+                        <label for="duree">Durée : </label>
+                        <input type="text" id="duree" placeholder="Nombre d'année"> <label for="duree">an(s)</label><br>
+                        <input id="button" type="button" value="Caculer Mensualité" onclick="caculPret()"><br>
+                        <label>Mensualité : </label><p id="mensualite"></p>
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <div style="padding: 5px; float: inline-end;"><a href="#HautProjets">Revenir plus haut</a></div>
+        <div class="Copyright">© Cheikh Saliou WADE | D-Click 2024</div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    /* background-color: #18534F ; */
+    background-image: url('Images/background.jpg');
+    background-image:linear-gradient();font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+.Copyright {padding: 15px; color: #C5C5A9;}
+a {color: #C5C5A9;font-weight: bold;transition: all 1s ease-out;}
+a:hover{color: #FEEAA1}
+h1{ border-bottom: 1px solid;border-color: #FEEAA1; 
+    color: #ECF8F6;
+    text-shadow: 1px 1px 2px black;text-align: center; 
+    padding-top: 50px; margin: 0px;width: 100%;
+    font-size: xx-large;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h2{color: #ECF8F6;
+    text-shadow: 0.5px 0.5px 1px black; 
+    padding-top: 50px; margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+nav{padding: 0px;color: #D6955B;font-weight: bold;border-bottom: 1px solid;border-color: #FEEAA1;}
+#bandeNAV{padding: 2px;margin: 2px;align-content: center;height: 22px;border-radius: 3px; 
+    box-shadow: 0.5px 0.5px 1px black; background: linear-gradient(to right,#226D68, #103633);
+    align-content:center; box-sizing: content-box;align-items: center;width: 100%;transition: all 1s ease-out;} 
+.nav{color: #D6955B;background-color: white;padding: 3px 10px;margin: 2px;border-radius: 15px;transition: all 1s ease-out;}
+#ici{background-color: #D6955B;color:white;;padding: 3px 10px;margin: 2px;border-radius: 15px;transition: all 1s ease-out;}
+.nav:hover, .nav:focus{background-color: #D6955B;color:white;}
+#bandeNAV:hover, #bandeNAV:focus {background: linear-gradient(to right,#19504d, #247972);}
+
+#Presentation{padding: 10px; margin: 10px;align-content: center; border: 2px solid #226D68; border-radius: 3px;transition: all 1s ease-out;}
+#Presentation:hover, #Presentation:focus {background-color: #103633;}
+#Presentation #Bio {float:left; width:60%;margin: 5px;border-radius: 3px; padding: 2px;}
+#Presentation #Photo {float:right;border:0.5px #C5C5A9 solid;border-radius: 3px; padding: 2px;}
+#Profil{height: 300px;width: auto;}
+
+#Parcours {padding: 5px;margin: 5px;border: 1px #FEEAA1 solid;border-radius: 3px;color: white;box-shadow: 0.5px 0.5px 1px black ;}
+#Format {padding: 5px;margin: 5px;border: 1px #C5C5A9 solid;border-radius: 3px;color: white;box-shadow: 0.5px 0.5px 1px black ;}
+#log, #lang{height: 80px;width: auto;transition: all 600ms ease-out;}
+#log:hover, #log:focus, #lang:hover, #lang:focus {height: 100px;width: auto;}
+
+#Projets div,#Contact div, #Logiciels div, #Langages div{color: #C5C5A9;text-align: justify;border: 1px solid #FEEAA1;
+    margin: 10px;padding: 10px;border-radius: 3px;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);}
+#label{padding-left: 5px;font-style: italic;color: white;}
+
+#Coordonnees td {margin: 2px;padding: 5px;
+    border: 1px solid #C5C5A9;}
+#Reseaux td {margin: 2px;padding: 5px;}
+#logo{width: auto; height: 20px;}
+
+button {padding: 10px 15px;
+    background-color: #103633;color: white; font-weight: bolder;
+    border: none;border-radius: 3px;
+    cursor: pointer;transition: all 1s ease-out;}
+#button {height: 30px;
+    background-color: #19504d;color: white; font-weight: bolder;
+    border: none;border-radius: 3px;
+    cursor: pointer;transition: all 1s ease-out;}
+button:hover, button:focus {background-color: #D6955B;}
+#button:hover, #button:focus {background-color: #D6955B;}
+
+div div{transition: all 1s ease-out;}
+div div:hover, div div:focus{background-color: #103633;}
+input{height: 25px;border: none;border-radius: 3px;margin: 3px;}
+textarea{border-radius: 3px;margin: 3px;}
