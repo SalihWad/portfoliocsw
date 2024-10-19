@@ -1,6 +1,6 @@
 body {
     /* background-color: #18534F ; */
-    background-image: url('Images/background.jpg');
+    background-image: url('https://salihwad.github.io/portfoliocsw/background.jpg');
     background-image:linear-gradient();font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
 .Copyright {padding: 15px; color: #C5C5A9;}
 a {color: #C5C5A9;font-weight: bold;transition: all 1s ease-out;}
